@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Apple_M";
+  src: url("../font/AppleSDGothicNeoM.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Apple_SB";
+  src: url("../font/AppleSDGothicNeoSB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gmarket_Bold";
+  src: url("../font/GmarketSansBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gmarket_Light";
+  src: url("../font/GmarketSansLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gmarket";
+  src: url("../font/GmarketSansMedium.woff") format("woff");
+}
+
+
+
+
+
+
+
+@font-face {
+	font-family:'Pretendard';
+	src: url(../font/Pretendard-Regular.eot);
+	src: url(../font/Pretendard-Regular.eot?#iefix) format('embedded-opentype'),
+			 url(../font/Pretendard-Regular.woff) format('woff'),
+			 url(../font/Pretendard-Regular.ttf) format('truetype');
+	font-weight:normal;
+}
+@font-face {
+	font-family:'Pretendard SemiBold';
+	src: url(../font/Pretendard-SemiBold.eot);
+	src: url(../font/Pretendard-SemiBold.eot?#iefix) format('embedded-opentype'),
+			 url(../font/Pretendard-SemiBold.woff) format('woff'),
+			 url(../font/Pretendard-SemiBold.ttf) format('truetype');
+	font-weight:normal;
+}
+@font-face {
+	font-family:'Pretendard Medium';
+	src: url(../font/Pretendard-Medium.eot);
+	src: url(../font/Pretendard-Medium.eot?#iefix) format('embedded-opentype'),
+			 url(../font/Pretendard-Medium.woff) format('woff'),
+			 url(../font/Pretendard-Medium.ttf) format('truetype');
+	font-weight:normal;
+}
+@font-face {
+	font-family:'Pretendard Regular';
+	src: url(../font/Pretendard-Regular.eot);
+	src: url(../font/Pretendard-Regular.eot?#iefix) format('embedded-opentype'),
+			 url(../font/Pretendard-Regular.woff) format('woff'),
+			 url(../font/Pretendard-Regular.ttf) format('truetype');
+	font-weight:normal;
+}
+@font-face {
+	font-family:'Pretendard Thin';
+	src: url(../font/Pretendard-Thin.eot);
+	src: url(../font/Pretendard-Thin.eot?#iefix) format('embedded-opentype'),
+			 url(../font/Pretendard-Thin.woff) format('woff'),
+			 url(../font/Pretendard-Thin.ttf) format('truetype');
+	font-weight:normal;
+}
