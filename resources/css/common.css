@@ -340,8 +340,18 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 	.game-list li a span.title:before {display:none;}
 }
 
-
-
+/* 콤프 */
+.comp-wrap .deposit-wrap-inner {height:auto;}
+.comp-wrap ul.comp-list {padding:15px 0 0 0;}
+.comp-wrap ul.comp-list li {position:relative;}
+.comp-wrap ul.comp-list li+li {border-top:1px solid #111;}
+.comp-wrap ul.comp-list li a {display:block;padding:15px 30px 15px 20px;font-size:0;}
+.comp-wrap ul.comp-list li a span {display:inline-block;width:calc(100% - 40px);font-size:14px;vertical-align:top;}
+.comp-wrap ul.comp-list li a span:first-child{width:40px;text-align:center;}
+.comp-wrap ul.comp-list li a:after {content:"";display:block;width:20px;height:20px;background:url(../images/icon_right_off.png) no-repeat 50% 50%/cover;position:absolute;top:50%;right:0;transform:translateY(-50%);}
+@media (hover: hover) and (pointer: fine) {
+	.comp-wrap ul.comp-list li a:hover:after {background:url(../images/icon_right_on.png) no-repeat 50% 50%/cover;}
+}
 
 
 
