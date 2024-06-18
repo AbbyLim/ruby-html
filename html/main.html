@@ -87,8 +87,8 @@
 							</div>
 						</div>
 						<div class="head-btn-wrap">
-							<a href="" class="btn-login">로그인</a>
-							<a href="" class="btn-join">회원가입</a>
+							<a href="javascript:;" data-link="#modal-login" class="btn-layer btn-login">로그인</a>
+							<a href="javascript:;" data-link="#modal-join" class="btn-layer btn-join">회원가입</a>
 						</div>
 						<a href="javascript:;" class="gnb-close"><span class="blind">모바일nav닫기</span></a>
 					</div>
@@ -174,6 +174,122 @@
 
 		<!-- layer dim -->
 		<div class="dim"></div>
+		<div class="layerpop-wrap">
+			<!-- 로그인 -->
+			<div id="modal-login" class="layerpop layer-over">
+				<div class="modal-cont">
+					<div class="login-wrap">
+						<dl>
+							<dt><div>아이디</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<div class="btn-area">
+							<button class="btn-type">로그인</button>
+							<button class="btn-type type3 btn-layer" data-link="#modal-join">회원가입</button>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="layer-close"><span class="blind">닫기</span></a>
+			</div>
+
+			<!-- 회원가입 -->
+			<div id="modal-join" class="layerpop layer-over  layer-over2">
+				<h3>SIGN-UP</h3>
+				<div class="modal-cont">
+					<div class="login-wrap join-wrap">
+						<dl class="with-btn">
+							<dt><div>아이디</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2">중복확인</button>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호 확인</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<dl class="with-btn">
+							<dt><div>휴대폰번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2">중복확인</button>
+							</dd>
+						</dl>
+						<div class="col-2">
+							<div>
+								<dl>
+									<dt><div>은행명</div></dt>
+									<dd>
+										<div class="ip-box">
+											<input type="text" />
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div>
+								<dl>
+									<dt><div>예금주</div></dt>
+									<dd>
+										<div class="ip-box">
+											<input type="text" />
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<dl>
+							<dt><div>계좌번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+							</dd>
+						</dl>
+						<dl class="with-btn">
+							<dt><div>가입코드</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2 btn-eff">유효확인</button>
+							</dd>
+						</dl>
+						<div class="btn-area">
+							<button class="btn-type">회원가입</button>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="layer-close"><span class="blind">닫기</span></a>
+			</div>
+		</div>
 		
 		<!-- (공통) 하단 탭바 -->
 		<div class="tab-bar mo-only">

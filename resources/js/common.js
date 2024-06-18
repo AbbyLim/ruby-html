@@ -1,60 +1,70 @@
-//lets toggle
-function baToggle(obj){
-	if($("input:checkbox[name=chkba]").is(':checked')){
-		$(".sv-better").addClass("after");
-	}else{
-		$(".sv-better").removeClass("after");
-	}
-};
 $(function(){	
-	if($(".intro-wrap").length){
-		$("html").addClass("intro-show");
-		//인트로
-		$(".intro-wrap .hello div").each(function(index){
-			var target = $(this),
-				parent = $(this).closest(".intro-wrap");
-			 setTimeout(function () {
-				 target.addClass("active");
-			 }, 200*index);
-			 setTimeout(function () {
-				 parent.addClass("step2");
-			 }, 2500);
-		});
-		//인트로 닫기
-		/*$(".weight-close").each(function(e){
-			$(this).off("click").on("click" , function(e){
-				e.preventDefault();
-				$(this).closest("html").removeClass("intro-show");
-				$(this).closest("html").addClass("intro-hide");
-			});
-		});*/
+	//팝업 공통 열기
+	function openpop(obj){
+		var pops = $(obj).attr("data-link");
+		$(pops).addClass("is-opened");
+		$("html").addClass("is-opened");
+		if($(pops).hasClass("layer-over")){
+			$("html").addClass("over");
+		};
+		if($(obj).hasClass("btn-over")){
+			$("html").addClass("over");
+			$(pops).addClass("layer-over");
+		};
 	};
+	//팝업 공통닫기
+	function closepop(obj){
+		var pops = $(obj).closest(".layerpop");
+		$(pops).removeClass("is-opened");
+		if($(pops).hasClass("layer-over")){
+			$("html").removeClass("over");
+		}else{
+			$("html").removeClass("is-opened");
+		};
+		$("html").removeClass("is-opened");
+	};
+	
+	//팝업 열기 버튼 공통
+	$(".btn-layer").each(function(e){
+		$(this).off("click").on("click" , function(e){
+			e.preventDefault();
+			openpop(this);
+		});
+	});
+	//팝업 닫기 버튼 공통
+	$(".layer-close").each(function(){
+		$(this).off("click").on("click" , function(e){
+			e.preventDefault();
+			closepop(this);
+		});
+	});
+	//dim 클릭시 팝업 닫기
+	/*$(".dim").each(function(){
+		$(this).off("click").on("click" , function(e){
+			e.preventDefault();
+			$("html").removeClass("is-opened");
+			$(".layerpop").each(function(){
+				$(this).removeClass("is-opened");
+			});
+		});
+	});*/
 	
 	//GNB
 	$(".btn-nav").each(function(e){
 		$(this).off("click").on("click" , function(e){
 			e.preventDefault();
 			$(".gnb-wrap").addClass("is-active");
-			$("html").addClass("is-opened");
+			$("html").addClass("gnb-opened");
 		});
 	});
 	$(".gnb-close").each(function(e){
 		$(this).off("click").on("click" , function(e){
 			e.preventDefault();
 			$(this).closest(".gnb-wrap").removeClass("is-active");
-			$("html").removeClass("is-opened");
+			$("html").removeClass("gnb-opened");
 		});
 	});
-	//dim 클릭시 팝업 닫기
-	$(".dim").each(function(){
-		$(this).off("click").on("click" , function(e){
-			e.preventDefault();
-			$("html").removeClass("is-opened over over2");
-			$(".layerpop").each(function(){
-				$(this).removeClass("is-opened");
-			});
-		});
-	});
+	
 
 	$(window).scroll(function(){
 		var $scrollLeft = -this.scrollX    
@@ -78,7 +88,6 @@ $(function(){
 	if($(".select-wrap").length){
 		$(".ip-import").each(function(){
 			$(this).on("click" , function(e){
-				//var name = $(this).data("name");
 				var imp = $(this).data("val");
 				$(this).closest(".import-wrap").toggleClass("opened");
 			});
@@ -87,6 +96,23 @@ $(function(){
 			$(this).on("click" , function(e){
 				$(this).closest(".import-wrap").removeClass("opened");
 			});
+		});
+	};
+	if($(".accor-list").length){
+		$(".accor-list li").each(function(){
+			$(this).on("click" , function(e){
+				$(this).siblings("li").removeClass("is-active");
+				$(this).addClass("is-active");
+				if($(this).closest(".contact-wrap").hasClass("message-wrap")){
+					$(this).addClass("read");
+				};
+			});
+		});
+		$(".title-box .title").each(function(e){
+			var $width = $(this).width();
+			if($(this).children("div").width > $width){
+				$(this).addClass("txt-over");
+			};
 		});
 	};
 
