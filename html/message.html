@@ -54,10 +54,10 @@
 									<li class="icon-casino"><a href="casino.html">카지노</a></li>
 									<li class="icon-slot"><a href="slot.html">슬롯게임</a></li>
 									<li class="icon-deposit"><a href="deposit.html">입금신청</a></li>
-									<li class="icon-withdraw is-active"><a href="withdraw.html">출금신청</a></li><!-- 활성메뉴 -->
+									<li class="icon-withdraw"><a href="withdraw.html">출금신청</a></li>
 									<li class="icon-comp"><a href="comp.html">콤프</a></li>
 									<li class="icon-notice"><a href="notice.html">공지사항</a></li>
-									<li class="icon-mypage"><a href="mypage.html">마이페이지</a></li>
+									<li class="icon-mypage is-active"><a href="mypage.html">마이페이지</a></li><!-- 활성메뉴 -->
 									<li class="icon-contact"><a href="contact.html">고객센터</a></li>
 									<li class="icon-rank mo-only"><a href="rank.html">주간출금랭킹</a></li>
 								</ul>
@@ -101,127 +101,100 @@
 				<!-- sub컨텐츠 -->
 				<div class="sub-container">
 
-					<!-- 출금신청 -->
-					<div class="deposit-wrap withdraw-wrap col-2"><!-- 출금신청 class="withdraw-wrap" -->
+					<!--  쪽지함 -->
+					<div class="deposit-wrap contact-wrap message-wrap">
 						<div class="deposit-wrap-inner">
-							<h3>출금신청</h3>
-							<div class="form-box">
-								<dl>
-									<dt>보유머니</dt>
-									<dd>
-										<div class="ip-box">
-											<input type="text" value="123,456,789" />
-											<span class="won">원</span>
-										</div>
-										<button type="button">새로고침</button>
-									</dd>
-								</dl>
-								<dl>
-									<dt>출금비밀번호</dt>
-									<dd>
-										<div class="ip-box ip-pw">
-											<input type="password" value="" />
-										</div>
-									</dd>
-								</dl>
-								<dl>
-									<dt>출금금액</dt>
-									<dd>
-										<div class="import-wrap">
-											<div class="ip-box">
-												<input type="text" value="123,456,789" class="ip-import" data-name="amount1"  />
-												<span class="won">원</span>
+							<h3>쪽지함<a href="javascript:;" class="btn-type type2 btn-write">전체삭제</a></h3>
+							<!-- nodata -->
+							<div class="nodata">쪽지함이 비었습니다.</div>
+
+							<ul class="contact-list accor-list">
+								<li><!-- 읽음 class="read" -->
+									<dl>
+										<dt>
+											<div class="title-box">
+												<div class="title"><span>블링벳에서 알려드립니다. 블링벳에서 알려드립니다. 블링벳에서 알려드립니다. 블링벳에서 알려드립니다.</span></div>
 											</div>
-											<button type="button">MAX</button>
-											<div class="import">
-												<input type="button" class="btn-imp" data-val="1만" value="1만원" />
-												<input type="button" class="btn-imp" data-val="3만" value="3만원" />
-												<input type="button" class="btn-imp" data-val="5만" value="5만원" />
-												<input type="button" class="btn-imp" data-val="10만" value="10만원" />
-												<input type="button" class="btn-imp" data-val="30만" value="30만원" />
-												<input type="button" class="btn-imp" data-val="50만" value="50만원" />
-												<input type="button" class="btn-imp" data-val="100만" value="100만원" />
-												<input type="button" class="btn-reset" data-name="amount1" value="초기화" />
+											<span class="icon-view"><span class="blind">읽음표시</span></span>
+											<button class="btn-delete"><span class="blind">삭제</span></button>
+										</dt>
+										<dd>
+											<div class="ques">
+												<div class="dd-txt">
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+												</div>
 											</div>
-										</div>
-									</dd>
-								</dl>
-								<input type="button" class="btn-type" value="출금신청" />
-							</div>
-						</div>
-						<div class="deposit-wrap-inner">
-							<h3>출금내역</h3>
-							<div class="nodata">출금내역이 없습니다.</div>
-							<div class="data-tb deposit-tb">
-								<ul class="data-th">
-									<li>신청일자</li>
-									<li>금액</li>
-									<li>처리시간</li>
-									<li>상태</li>
-								</ul>
-								<div class="data-td">
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status comp">완료</div></li><!-- 완료 class="comp" -->
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status comp">완료</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-								</div>
-							</div>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<div class="title-box">
+												<div class="title"><span>블링벳에서 알려드립니다.</span></div>
+											</div>
+											<span class="icon-view"><span class="blind">읽음표시</span></span>
+											<button class="btn-delete"><span class="blind">삭제</span></button>
+										</dt>
+										<dd>
+											<div class="ques">
+												<div class="dd-txt">
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<div class="title-box">
+												<div class="title"><span>블링벳에서 알려드립니다.</span></div>
+											</div>
+											<span class="icon-view"><span class="blind">읽음표시</span></span>
+											<button class="btn-delete"><span class="blind">삭제</span></button>
+										</dt>
+										<dd>
+											<div class="ques">
+												<div class="dd-txt">
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<div class="title-box">
+												<div class="title"><span>블링벳에서 알려드립니다.</span></div>
+											</div>
+											<span class="icon-view"><span class="blind">읽음표시</span></span>
+											<button class="btn-delete"><span class="blind">삭제</span></button>
+										</dt>
+										<dd>
+											<div class="ques">
+												<div class="dd-txt">
+													블링벳에서 알려드립니다.<br />
+													블링벳에서 알려드립니다.<br />
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</li>
+							</ul>
 							<div class="paging">
 								<button class="page-prev"><span class="blind">이전페이지</span></button>
 								<a href="javascript:;" class="is-active">1</a>
@@ -234,7 +207,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<!-- (공통) 푸터 -->
 		<footer>
 			<div class="inner">

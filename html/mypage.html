@@ -54,10 +54,10 @@
 									<li class="icon-casino"><a href="casino.html">카지노</a></li>
 									<li class="icon-slot"><a href="slot.html">슬롯게임</a></li>
 									<li class="icon-deposit"><a href="deposit.html">입금신청</a></li>
-									<li class="icon-withdraw is-active"><a href="withdraw.html">출금신청</a></li><!-- 활성메뉴 -->
+									<li class="icon-withdraw"><a href="withdraw.html">출금신청</a></li>
 									<li class="icon-comp"><a href="comp.html">콤프</a></li>
 									<li class="icon-notice"><a href="notice.html">공지사항</a></li>
-									<li class="icon-mypage"><a href="mypage.html">마이페이지</a></li>
+									<li class="icon-mypage is-active"><a href="mypage.html">마이페이지</a></li><!-- 활성메뉴 -->
 									<li class="icon-contact"><a href="contact.html">고객센터</a></li>
 									<li class="icon-rank mo-only"><a href="rank.html">주간출금랭킹</a></li>
 								</ul>
@@ -86,8 +86,8 @@
 							</div>
 						</div>
 						<div class="head-btn-wrap">
-							<a href="" class="btn-login">로그인</a>
-							<a href="" class="btn-join">회원가입</a>
+							<a href="javascript:;" data-link="#modal-login" class="btn-layer btn-login">로그인</a>
+							<a href="javascript:;" data-link="#modal-join" class="btn-layer btn-join">회원가입</a>
 						</div>
 						<a href="javascript:;" class="gnb-close"><span class="blind">모바일nav닫기</span></a>
 					</div>
@@ -101,140 +101,65 @@
 				<!-- sub컨텐츠 -->
 				<div class="sub-container">
 
-					<!-- 출금신청 -->
-					<div class="deposit-wrap withdraw-wrap col-2"><!-- 출금신청 class="withdraw-wrap" -->
+					<!--  마이페이지 -->
+					<div class="deposit-wrap mypage-wrap">
 						<div class="deposit-wrap-inner">
-							<h3>출금신청</h3>
-							<div class="form-box">
-								<dl>
-									<dt>보유머니</dt>
-									<dd>
-										<div class="ip-box">
-											<input type="text" value="123,456,789" />
-											<span class="won">원</span>
-										</div>
-										<button type="button">새로고침</button>
-									</dd>
-								</dl>
-								<dl>
-									<dt>출금비밀번호</dt>
-									<dd>
-										<div class="ip-box ip-pw">
-											<input type="password" value="" />
-										</div>
-									</dd>
-								</dl>
-								<dl>
-									<dt>출금금액</dt>
-									<dd>
-										<div class="import-wrap">
-											<div class="ip-box">
-												<input type="text" value="123,456,789" class="ip-import" data-name="amount1"  />
-												<span class="won">원</span>
-											</div>
-											<button type="button">MAX</button>
-											<div class="import">
-												<input type="button" class="btn-imp" data-val="1만" value="1만원" />
-												<input type="button" class="btn-imp" data-val="3만" value="3만원" />
-												<input type="button" class="btn-imp" data-val="5만" value="5만원" />
-												<input type="button" class="btn-imp" data-val="10만" value="10만원" />
-												<input type="button" class="btn-imp" data-val="30만" value="30만원" />
-												<input type="button" class="btn-imp" data-val="50만" value="50만원" />
-												<input type="button" class="btn-imp" data-val="100만" value="100만원" />
-												<input type="button" class="btn-reset" data-name="amount1" value="초기화" />
-											</div>
-										</div>
-									</dd>
-								</dl>
-								<input type="button" class="btn-type" value="출금신청" />
-							</div>
-						</div>
-						<div class="deposit-wrap-inner">
-							<h3>출금내역</h3>
-							<div class="nodata">출금내역이 없습니다.</div>
-							<div class="data-tb deposit-tb">
-								<ul class="data-th">
-									<li>신청일자</li>
-									<li>금액</li>
-									<li>처리시간</li>
-									<li>상태</li>
-								</ul>
-								<div class="data-td">
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status comp">완료</div></li><!-- 완료 class="comp" -->
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status comp">완료</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
-									<ul>
-										<li>2024-01-01 13:00</li>
-										<li>123,456,789 원</li>
-										<li>2024-01-01 13:00</li>
-										<li><div class="status">진행중</div></li>
-									</ul>
+							<h3>내정보</h3>
+							<div class="mypage-box">
+								<div class="mem-area">
+									<div class="mem-level">LEVEL.01</div>
+									<div class="mem-name">RUBYTEST 님</div>
+									<a href="javascript:;" class="btn-type type2 btn-logout">로그아웃</a>
 								</div>
-							</div>
-							<div class="paging">
-								<button class="page-prev"><span class="blind">이전페이지</span></button>
-								<a href="javascript:;" class="is-active">1</a>
-								<a href="javascript:;">2</a>
-								<a href="javascript:;">3</a>
-								<button class="page-next"><span class="blind">다음페이지</span></button>
+								<div class="info-box">
+									<dl class="money">
+										<dt>보유머니</dt>
+										<dd><div>123,456 원</div></dd>
+									</dl>
+									<dl class="point">
+										<dt>포인트</dt>
+										<dd><div>123,456 P</div></dd>
+									</dl>
+									<dl class="message">
+										<dt>메세지</dt>
+										<dd><div>12 개</div></dd>
+									</dl>
+								</div>
+								<h4>비밀번호 변경</h4>
+								<div class="form-box edit-pw">
+									<dl class="asis-pw">
+										<dt><div>기존 비밀번호</div></dt>
+										<dd>
+											<div class="ip-box">
+												<input type="password" />
+											</div>
+											<button type="button">확인</button>
+										</dd>
+									</dl>
+									<dl>
+										<dt>변경할 비밀번호</dt>
+										<dd>
+											<div class="ip-box ip-pw">
+												<input type="password" value="" />
+											</div>
+										</dd>
+									</dl>
+									<dl>
+										<dt>비밀번호 확인</dt>
+										<dd>
+											<div class="ip-box ip-pw">
+												<input type="password" value="" />
+											</div>
+										</dd>
+									</dl>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		
 		<!-- (공통) 푸터 -->
 		<footer>
 			<div class="inner">
@@ -245,6 +170,116 @@
 
 		<!-- layer dim -->
 		<div class="dim"></div>
+		<div class="layerpop-wrap">
+			<!-- 로그인 -->
+			<div id="modal-login" class="layerpop layer-over">
+				<div class="modal-cont">
+					<div class="login-wrap">
+						<dl>
+							<dt><div>아이디</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<div class="btn-area">
+							<button class="btn-type">로그인</button>
+							<button class="btn-type type3 btn-layer" data-link="#modal-join">회원가입</button>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="layer-close"><span class="blind">닫기</span></a>
+			</div>
+
+			<!-- 회원가입 -->
+			<div id="modal-join" class="layerpop layer-over  layer-over2">
+				<h3>SIGN-UP</h3>
+				<div class="modal-cont">
+					<div class="login-wrap join-wrap">
+						<dl class="with-btn">
+							<dt><div>아이디</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2">중복확인</button>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><div>비밀번호 확인</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="password" />
+								</div>
+							</dd>
+						</dl>
+						<dl class="with-btn">
+							<dt><div>휴대폰번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2">중복확인</button>
+							</dd>
+						</dl>
+						<div class="col-2">
+							<dl>
+								<dt><div>은행명</div></dt>
+								<dd>
+									<div class="ip-box">
+										<input type="text" />
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><div>예금주</div></dt>
+								<dd>
+									<div class="ip-box">
+										<input type="text" />
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<dl>
+							<dt><div>계좌번호</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+							</dd>
+						</dl>
+						<dl class="with-btn">
+							<dt><div>가입코드</div></dt>
+							<dd>
+								<div class="ip-box">
+									<input type="text" />
+								</div>
+								<button class="btn-type type2">유효확인</button>
+							</dd>
+						</dl>
+						<button class="btn-type">회원가입</button>
+					</div>
+				</div>
+				<a href="javascript:;" class="layer-close"><span class="blind">닫기</span></a>
+			</div>
+		</div>
 		
 		<!-- (공통) 하단 탭바 -->
 		<div class="tab-bar mo-only">
