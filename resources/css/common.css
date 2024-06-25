@@ -57,7 +57,8 @@ html.is-opened .dim {display:block;}
 .layerpop .login-wrap dl dt {display:table-cell;width:80px;text-align:right;padding-right:10px;}
 .layerpop .login-wrap dl dd {display:table-cell;}
 .layerpop .login-wrap dl dd .ip-box {padding-right:10px;width:100%;}
-.layerpop .login-wrap dl dd .ip-box input {height:50px;}
+.layerpop .login-wrap dl dd .ip-box input {height:50px;text-align:left;}
+.layerpop .login-wrap dl dd .ip-box input:focus {border-color:transparent;}
 .layerpop .login-wrap dl dd .btn-type.type2 {height:50px;float:right;}
 .layerpop .login-wrap dl dd .btn-eff {background:#62200a;}
 .layerpop .login-wrap dl.with-btn dd .ip-box {display:inline-block;width:calc(100% - 105px);}
@@ -448,6 +449,8 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 .mypage-wrap .edit-pw dl dt div {color:#9d9d9d;}
 .mypage-wrap .edit-pw dl dd {display:table-cell;}
 .mypage-wrap .edit-pw dl .ip-box {width:100%;padding-right:10px;}
+.mypage-wrap .edit-pw dl .ip-box input {text-align:left;}
+.mypage-wrap .edit-pw dl .ip-box input:focus {border-color:transparent;}
 .mypage-wrap .edit-pw dl.asis-pw dd .ip-box {width:75%;}
 @media (max-width:750px) {
 	.mypage-wrap .mem-area div {font-size:16px;}
