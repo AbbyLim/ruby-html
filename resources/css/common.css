@@ -176,11 +176,14 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 .container {padding:100px 0 0 0;min-width:1280px;margin:0 auto;}
 .container>.inner {padding:0 40px 0 300px;max-width:1920px;margin:0 auto;box-sizing:border-box;}
 .line-notice {font-size:14px;line-height:36px;padding:0 70px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#171717;border-radius:36px;margin:10px 0;}
+.gnb-btm {display:block !important;}
+.gnb-btm .btn-telegram {display:block;width:240px;height:40px;background:url(../images/btn_tel.png) no-repeat 0 0/cover;margin-top:20px;font-size:0;line-height:0;}
 @media screen and (max-height:1050px) {
 	.header {position:relative;}
 	.container {padding:0;}
 }
 @media (max-width:750px) {
+	.gnb-wrap-inner .rank {display:block !important;padding-top:25px;}
 	.wrap {}
 	.header {position:fixed;top:0;left:0;height:50px;}
 	.header .inner {height:50px;padding:0;min-width:auto;}
@@ -218,7 +221,7 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 	.gnb .nav>li>a:before {width:22px;height:22px;left:0;}
 	.gnb .nav>li.icon-rank>a:before {width:22px;height:22px;left:0;background:url(../images/icon_trophy.png) no-repeat 50% 50%/15px;margin-top:-2px;}
 	*/
-	.gnb-btm .btn-telegram {display:block;background:#328eb9;border-radius:10px;padding:10px 0;font-size:14px;text-align:center;line-height:30px;margin-top:20px;}
+	.gnb-btm .btn-telegram {display:block;background:#328eb9;border-radius:10px;padding:10px 0;font-size:14px;text-align:center;line-height:30px;margin-top:20px;height:auto;}
 	.gnb-btm .btn-telegram>span {display:inline-block;padding-left:35px;position:relative;}
 	.gnb-btm .btn-telegram>span:before {content:"";display:inline-block;width:30px;height:30px;background:url(../images/icon_tele_white.png) no-repeat 50% 50%/cover;position:absolute;top:0;left:0;}
 	.gnb-btm .btn-telegram>span em {transform:translateY(3px);display:inline-block;}
@@ -270,18 +273,18 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 .ip-box.ip-pw input {text-align:left;width:100%;}
 .ip-box span.won {position:absolute;top:0;right:10px;width:20px;font-size:12px;text-align:center;line-height:36px;display:block;}
 .deposit-wrap {}
-.deposit-wrap .deposit-wrap-inner {position:relative;width:500px;margin:0 auto;padding:30px;box-sizing:border-box;background:#1b1b1b;border-radius:10px;height:526px;}
+.deposit-wrap .deposit-wrap-inner {position:relative;width:500px;margin:0 auto;padding:30px;box-sizing:border-box;background:#1b1b1b;border-radius:10px;min-height:526px;}
 .deposit-wrap h3 {padding:10px 0;text-align:center;font-size:20px;font-family:"Gmarket_Bold";}
 .deposit-wrap.col-2 {width:1030px;margin:0 auto;}
 .deposit-wrap.col-2:after {content:"";display:block;clear:both;}
 .deposit-wrap.col-2>.deposit-wrap-inner:first-child {float:left;}
-.deposit-wrap.col-2>.deposit-wrap-inner:last-child {float:right;}
+.deposit-wrap.col-2>.deposit-wrap-inner:last-child {float:right;padding-bottom:80px;}
 .form-box {padding:25px 0 0 0;}
 .form-box button {height:35px;border-radius:8px;text-align:center;border:0;color:#fff;background:#620a11;width:calc(25% - 6px);}
 .form-box .ip-box+ button {float:right;}
 .form-box>dl {display:table;width:100%;table-layout:fixed;}
 .form-box>dl+dl {margin-top:25px;}
-.form-box>dl>dt {display:table-cell;width:80px;padding-right:10px;vertical-align:top;line-height:35px;}
+.form-box>dl>dt {display:table-cell;width:80px;padding-right:10px;vertical-align:top;line-height:35px;text-align:right;}
 .form-box>dl>dd {display:table-cell;width:calc(100% - 90px);vertical-align:middle;}
 .form-box>dl>dd .noti {font-size:12px;}
 .form-box>dl>dd .noti>div {display:inline-block;line-height:35px;padding:0 40px;background:#620a31;border-radius:8px;margin-right:5px;}
@@ -305,7 +308,8 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 .deposit-tb .data-td>ul>li {width:28%;}
 .deposit-tb .data-th>li:last-child,
 .deposit-tb .data-td>ul>li:last-child {width:16%;}
-.deposit-tb .data-td>ul>li .status.comp {color:#e63846;}
+.deposit-tb .data-td>ul>li .status {color:#e63846;}
+.deposit-tb .data-td>ul>li .status.comp {color:#fff;}
 .data-tb .data-td {padding-top:10px;}
 .data-tb .data-td>ul>li {padding:6px 0;}
 .deposit-wrap-inner .paging {position:absolute;bottom:0;left:0;width:100%;padding:15px 0;border-top:1px solid #000;text-align:center;font-size:0;}
@@ -339,6 +343,7 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 	.deposit-wrap-inner .paging a {}
 	.withdraw-wrap .form-box>dl+dl {margin-top:25px;}
 	.withdraw-wrap .form-box>dl>dt {width:70px;}
+	.deposit-wrap.col-2>.deposit-wrap-inner:last-child {padding-bottom:15px;}
 }
 
 /* 카지노 */
@@ -347,7 +352,7 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 /* 슬롯 */
 .slot-wrap {}
 .slot-supplier {font-size:0;margin:0 -7px;}
-.slot-supplier li {display:inline-block;width:calc(10% - 14px);margin:0 7px 7px 7px;}
+.slot-supplier li {display:inline-block;width:calc(10% - 14px);margin:0 7px 7px 7px;vertical-align:top;}
 .slot-supplier li button {display:block;width:100%;text-align:center;background:#1a1a1a;height:40px;border-radius:8px;font-size:12px;}
 .slot-supplier li button.is-active {background:linear-gradient(to bottom,  rgba(109,13,13,1) 0%,rgba(153,37,37,1) 50%,rgba(109,13,13,1) 100%);}
 .game-search {position:relative;width: calc(30% - 14px);box-sizing:border-box;padding:0 20px 0 50px;border-radius:30px;background:#1a1a1a;border:1px solid #404040;margin:13px 0 0 0;}
@@ -386,7 +391,8 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 }
 .nodata {text-align:center;padding:100px 0;}
 /* 콤프 */
-.comp-wrap .deposit-wrap-inner {height:auto;}
+.comp-wrap .deposit-wrap-inner {height:auto;min-height:auto;}
+.comp-wrap .deposit-wrap-inner:last-child {min-height:auto;}
 .comp-wrap ul.comp-list {padding:15px 0 0 0;}
 .comp-wrap ul.comp-list li {position:relative;}
 .comp-wrap ul.comp-list li+li {border-top:1px solid #111;}
@@ -397,6 +403,12 @@ footer .inner {width:100%;line-height:30px;color:#363636;padding:140px 0 0 0;bac
 @media (hover: hover) and (pointer: fine) {
 	.comp-wrap ul.comp-list li a:hover {transform:scale(1.03);}
 	.comp-wrap ul.comp-list li a:hover:after {background:url(../images/icon_right_on.png) no-repeat 50% 50%/cover;}
+}
+.comp-wrap .form-box>dl>dt {}
+.comp-wrap .form-box>dl.type-2row {padding-bottom:35px;margin-bottom:30px;border-bottom:1px solid #606060;}
+.comp-wrap .form-box>dl.type-2row>dt {line-height:20px;}
+@media (max-width:750px) {
+	.comp-wrap .form-box>dl.type-2row>dt {line-height:18px;}
 }
 
 /* 고객센터*/
